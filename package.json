@@ -1,0 +1,15 @@
+{
+  "name": "linkfinder",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Orin220444",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "telegraf": "^3.36.0"
+  }
+}
