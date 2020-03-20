@@ -6,7 +6,7 @@ bot.on('message', async(ctx) => {
     if(ctx.message.entities) {
     const entities = ctx.message.entities
     console.log(entities)
-    let likentity = entities.find(item => item.type == 'text_link')
+    let likentity = entities.filter(item => item.type == 'text_link')
     console.log(likentity)
     if (likentity == undefined) {
         ctx.reply('Здесь нет ссылок!', {reply_to_message_id: message})
