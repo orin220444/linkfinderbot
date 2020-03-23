@@ -12,7 +12,7 @@ bot.on('message', async (ctx) => {
         let i = 0;
         let url = ' ';
         while (i < likentity.length) {
-          url = likentity[i].url + '\n';
+          url = likentity[i].url;
           i++;
           await ctx.reply(url);
         }
