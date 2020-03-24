@@ -9,6 +9,7 @@
   "author": "Orin220444",
   "license": "MIT",
   "dependencies": {
+    "axios": "^0.19.2",
     "dotenv": "^8.2.0",
     "telegraf": "^3.36.0"
   },
