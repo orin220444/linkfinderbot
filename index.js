@@ -27,17 +27,6 @@ bot.on('message', async (ctx) => {
         await ctx.reply(url);
         i++;
       }
-      axios.post('https://getpocket.com/v3/add', {
-        url: url,
-        consumer_key: process.env.CONSUMER_KEY,
-        
-      })
-      .then(function (response) {
-        console.log(response);
-      })
-      .catch(function (error) {
-        console.log(error);
-      });
     } else {
       ctx.reply('Здесь нет ссылок!'/* , {reply_to_message_id: message}*/);
     }
