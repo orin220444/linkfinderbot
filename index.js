@@ -6,9 +6,9 @@ bot.on('message', async (ctx) => {
   const message = ctx.message.message_id
   if (ctx.message.entities) {
     const entities = ctx.message.entities;
-    const likentity = entities.filter((item) => item.type == 'text_link');
+    const linkentity = entities.filter((item) => item.type == 'text_link');
     const urlentity = entities.filter((item) => item.type == 'url');
-    if (likentity) {
+    if (linkentity) {
       let i = 0;
       let url = ' ';
       while (i < likentity.length) {
